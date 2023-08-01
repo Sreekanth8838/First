@@ -1,0 +1,8 @@
+# Checks File Explorer if Google Chrome is present on device
+If{
+$pathone = (Get-ChildItem "C:\Program Files\Google\Chrome\Application\chrome.exe")
+}
+Else
+{ 
+$pathtwo = (Get-ChildItem "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
+}

@@ -1,0 +1,3 @@
+Root-Certificate
+
+$Cert = New-SelfSignedCertificate -Type custom -KeySpec Signature -Subject 'CN=P2SCert' -KeyExportPolicy Exportable -HashAlgorithm sha256 -KeyLength 2048 -CertStoreLocation "Cert:\CurrentUser\My\" -KeyUsageProperty sign -KeyUsage CertSign
